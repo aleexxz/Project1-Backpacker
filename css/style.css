@@ -437,10 +437,9 @@ header .navbar-styling .navbar-mobile {
 
 header .social-icons {
   position: fixed;
-  top: 0;
+  top: 40%;
   right: 0;
   background-color: #ffffffa2;
-  margin-top: 350px;
   -webkit-animation: rightNavbar 1s ease-out 0.5s backwards;
           animation: rightNavbar 1s ease-out 0.5s backwards;
 }
