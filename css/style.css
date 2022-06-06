@@ -1,0 +1,2220 @@
+@-webkit-keyframes navbarTop {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes navbarTop {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes navbarTopLogo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes navbarTopLogo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rightNavbar {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes rightNavbar {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes navMobile {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes navMobile {
+  0% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes form {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes form {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes packAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes packAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes aboutAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aboutAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes photoScroll {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes photoScroll {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loginFormAnim {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes loginFormAnim {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes signUpFormAnim {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes signUpFormAnim {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "PT Sans Narrow", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 100vh;
+}
+
+header .navbar-styling {
+  padding: 1em;
+  text-transform: uppercase;
+  margin: auto !important;
+  background-color: #ffffffa2;
+  z-index: -2;
+}
+
+header .navbar-styling video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  padding: 0 !important;
+}
+
+header .navbar-styling nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 1.3em;
+  text-transform: capitalize;
+  -webkit-animation: navbarTop 1s ease-out 0.5s backwards;
+          animation: navbarTop 1s ease-out 0.5s backwards;
+}
+
+header .navbar-styling nav ul li {
+  list-style-type: none;
+  padding: 0 0.5em;
+}
+
+header .navbar-styling nav ul li a {
+  color: #3578b6;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  position: relative;
+  padding-bottom: 0.2em !important;
+}
+
+header .navbar-styling nav ul li a:hover {
+  color: #25374b;
+}
+
+header .navbar-styling nav ul li a::before {
+  position: absolute;
+  content: "";
+  border-bottom: 3px solid #3578b6;
+  border-radius: 1em;
+  bottom: 0.1em;
+  width: 100%;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+header .navbar-styling nav ul li a:hover::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+header .navbar-styling .logo-ctn, header .navbar-styling .logo-ctn-scroll {
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+  -webkit-animation: navbarTopLogo 1s ease-out 0.5s backwards;
+          animation: navbarTopLogo 1s ease-out 0.5s backwards;
+  z-index: 99;
+}
+
+header .navbar-styling .logo-ctn .logo-svg, header .navbar-styling .logo-ctn-scroll .logo-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
+  opacity: 0.7;
+  z-index: 100;
+}
+
+header .navbar-styling .logo-ctn .logo, header .navbar-styling .logo-ctn-scroll .logo {
+  text-decoration: none;
+  color: #3578b6;
+  z-index: 101;
+}
+
+header .navbar-styling .logo-ctn .logo:hover, header .navbar-styling .logo-ctn-scroll .logo:hover {
+  cursor: pointer;
+}
+
+header .navbar-styling .logo-ctn-scroll {
+  -webkit-animation: navbarTopLogo 2s ease-out 0s backwards;
+          animation: navbarTopLogo 2s ease-out 0s backwards;
+  font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin-top: 0.2em;
+  z-index: 99;
+  display: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+header .navbar-styling .logo-ctn-scroll:hover {
+  cursor: pointer;
+}
+
+header .navbar-styling .logo-ctn-scroll .logo-svg {
+  width: 100px;
+}
+
+header .navbar-styling .logo-ctn-scroll::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
+  width: 0;
+  height: 0;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-top: 100px solid #ffffffa2;
+  z-index: -1;
+}
+
+header .navbar-styling .logo-ctn-scroll:hover::after {
+  content: url("../images/up-arrow.svg");
+  position: absolute;
+  top: 100%;
+  left: 40.5%;
+  width: 30px;
+  height: 30px;
+  opacity: 0.9;
+}
+
+header .navbar-styling .right-col {
+  -webkit-animation: navbarTop 1s ease-out 0.5s backwards;
+          animation: navbarTop 1s ease-out 0.5s backwards;
+}
+
+header .navbar-styling .right-col .search-btn {
+  float: right;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #3578b6;
+}
+
+header .navbar-styling .right-col .search-btn:hover {
+  color: black;
+}
+
+header .navbar-styling .right-col .join-now-btn {
+  background-color: transparent !important;
+}
+
+header .navbar-styling .right-col .join-now-btn:hover {
+  cursor: pointer;
+  color: #3578b6 !important;
+}
+
+header .navbar-styling .navbar-mobile {
+  display: none;
+}
+
+header .social-icons {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #ffffffa2;
+  margin-top: 350px;
+  -webkit-animation: rightNavbar 1s ease-out 0.5s backwards;
+          animation: rightNavbar 1s ease-out 0.5s backwards;
+}
+
+header .social-icons i {
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  color: #3578b6;
+}
+
+header .social-icons i:hover {
+  cursor: pointer;
+  color: #25374b;
+}
+
+header #contactSection,
+header .activeW {
+  width: 60%;
+  padding: 0;
+}
+
+header #contactSection .contact-wrap,
+header .activeW .contact-wrap {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+header #contactSection .contact-wrap .contact-title,
+header .activeW .contact-wrap .contact-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.5em;
+  padding-top: 1em;
+  color: black;
+}
+
+header #contactSection .contact-wrap .hr1,
+header .activeW .contact-wrap .hr1 {
+  border: 1px solid #3578b6;
+  margin: auto;
+}
+
+header #contactSection form,
+header .activeW form {
+  -webkit-animation: form 1.5s ease-out 0.2s backwards;
+          animation: form 1.5s ease-out 0.2s backwards;
+  padding: 4em 0;
+}
+
+header #contactSection form fieldset,
+header .activeW form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  background-color: #3578b6;
+  border: none;
+  padding: 2em 0;
+  font-size: 1.1em;
+  color: aliceblue;
+  font-weight: 300;
+}
+
+header #contactSection form fieldset label,
+header .activeW form fieldset label {
+  width: 60%;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
+header #contactSection form fieldset .box,
+header .activeW form fieldset .box {
+  width: 60%;
+  margin: auto;
+  background-color: transparent;
+  border: 1px solid aliceblue;
+  padding: 0.2em;
+  outline: none;
+  padding: 0.5em;
+  color: aliceblue;
+}
+
+header #contactSection form fieldset .box:hover,
+header .activeW form fieldset .box:hover {
+  background-color: #25374b;
+  color: aliceblue;
+}
+
+header #contactSection form fieldset .red-star,
+header .activeW form fieldset .red-star {
+  color: aliceblue;
+}
+
+header #contactSection form fieldset textarea,
+header .activeW form fieldset textarea {
+  padding-bottom: 1em;
+}
+
+header #contactSection form fieldset textarea::-webkit-input-placeholder,
+header .activeW form fieldset textarea::-webkit-input-placeholder {
+  color: aliceblue;
+}
+
+header #contactSection form fieldset textarea:-ms-input-placeholder,
+header .activeW form fieldset textarea:-ms-input-placeholder {
+  color: aliceblue;
+}
+
+header #contactSection form fieldset textarea::-ms-input-placeholder,
+header .activeW form fieldset textarea::-ms-input-placeholder {
+  color: aliceblue;
+}
+
+header #contactSection form fieldset textarea::placeholder,
+header .activeW form fieldset textarea::placeholder {
+  color: aliceblue;
+}
+
+header #contactSection form fieldset .submit-form,
+header .activeW form fieldset .submit-form {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  padding-top: 0.5em;
+}
+
+header #contactSection form fieldset .submit-form p,
+header .activeW form fieldset .submit-form p {
+  padding-top: 1em;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+header #contactSection form fieldset .submit-form .send-message-btn,
+header .activeW form fieldset .submit-form .send-message-btn {
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.1em;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  background-color: aliceblue;
+  font-weight: bold;
+}
+
+header #contactSection form fieldset .submit-form .send-message-btn:hover,
+header .activeW form fieldset .submit-form .send-message-btn:hover {
+  background-color: #25374b;
+  color: aliceblue;
+}
+
+header #aboutSection,
+header .activeW {
+  width: 60%;
+  margin: auto;
+  height: auto;
+  -webkit-animation: aboutAnimation 1.5s ease-out 0.2s backwards;
+          animation: aboutAnimation 1.5s ease-out 0.2s backwards;
+}
+
+header #aboutSection .about-wrap,
+header .activeW .about-wrap {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+header #aboutSection .about-wrap .about-title,
+header .activeW .about-wrap .about-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.5em;
+  padding-top: 1em;
+  color: black;
+}
+
+header #aboutSection .about-wrap .hr2,
+header .activeW .about-wrap .hr2 {
+  border: 1px solid #3578b6;
+  margin: auto;
+}
+
+header #aboutSection .about-wrapper,
+header .activeW .about-wrapper {
+  padding: 4em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+header #aboutSection .about-wrapper .about-img,
+header .activeW .about-wrapper .about-img {
+  margin-right: 1em;
+  width: 50%;
+}
+
+header #aboutSection .about-wrapper .about-img img,
+header .activeW .about-wrapper .about-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header #aboutSection .about-wrapper .about-description,
+header .activeW .about-wrapper .about-description {
+  width: 50%;
+  margin-left: 1em;
+}
+
+header #aboutSection .about-wrapper .about-description .who-are-we,
+header .activeW .about-wrapper .about-description .who-are-we {
+  background-color: #3578b6;
+  color: aliceblue;
+  font-size: 2em;
+  text-transform: capitalize;
+  padding: 0.1em 0.5em;
+}
+
+header #aboutSection .about-wrapper .about-description .about-paragraph,
+header .activeW .about-wrapper .about-description .about-paragraph {
+  padding: 2em 0;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.carousel-section {
+  position: relative;
+  height: 850px;
+}
+
+.carousel-section .poster {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -57.5%);
+          transform: translate(-50%, -57.5%);
+  height: 1000px;
+  background-color: #3578b6;
+}
+
+.carousel-section .poster h1, .carousel-section .poster h2 {
+  text-align: center;
+}
+
+.carousel-section .poster .carousel-item {
+  height: 700px;
+}
+
+.carousel-section .poster .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 700px;
+}
+
+.card-section, .search-results .show-posts {
+  width: 60%;
+  margin: 2em auto;
+}
+
+.card-section span, .search-results .show-posts span {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.card-section .col, .search-results .show-posts .col {
+  padding-top: 2em;
+  overflow: hidden;
+}
+
+.card-section .col .modal-btn-style, .search-results .show-posts .col .modal-btn-style {
+  border: none !important;
+}
+
+.card-section .col .modal-btn-style .card:hover, .search-results .show-posts .col .modal-btn-style .card:hover {
+  cursor: pointer;
+}
+
+.card-section .col a, .search-results .show-posts .col a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-section .col a .card:hover, .search-results .show-posts .col a .card:hover {
+  cursor: pointer;
+}
+
+.card-section .col a #locked-card::before, .search-results .show-posts .col a #locked-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -55px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #ffffffa2;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+}
+
+.card-section .col a #locked-card::after, .search-results .show-posts .col a #locked-card::after {
+  content: "";
+  background-image: url(../images/lock-solid.svg);
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.card-section .col .card-footer, .search-results .show-posts .col .card-footer {
+  background-color: #3578b6;
+}
+
+.card-section .col .card-footer small, .search-results .show-posts .col .card-footer small {
+  color: aliceblue !important;
+}
+
+.bg-img1, .bg-img2 {
+  background-image: url("../images/bg-images/bg-img1.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.community-photos {
+  padding: 3em 0;
+}
+
+.community-photos .community-h3 {
+  font-size: 7em;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.community-photos .community-h4 {
+  font-size: 3.5em;
+}
+
+.community-photos .community-photos-ctn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 400px;
+  gap: 10px;
+  padding: 8em;
+}
+
+.community-photos .community-photos-ctn .comm-photo {
+  overflow: hidden;
+  -webkit-animation: photoScroll 1s ease-out 0.5s backwards;
+          animation: photoScroll 1s ease-out 0.5s backwards;
+}
+
+.community-photos .community-photos-ctn .comm-photo > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+
+.community-photos .community-photos-ctn .comm-photo > img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.community-photos .community-photos-ctn .img-area-span-row-2 {
+  grid-row: span 2;
+}
+
+.community-photos .community-photos-ctn .img-area-span-col-3 {
+  grid-column: span 3;
+}
+
+.community-photos .community-photos-ctn .img-area-span-col-2-row-2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.community-photos .community-photos-ctn .img-area-span-col-2 {
+  grid-column: span 2;
+}
+
+.bg-img2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#1f89d448), to(#095ab7ef)), url("../images/bg-images/bg-img2.jpg");
+  background-image: linear-gradient(to right, #1f89d448, #095ab7ef), url("../images/bg-images/bg-img2.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.bg-img2 .bg-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.bg-img2 .bg-wrapper .bg-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: aliceblue;
+}
+
+.bg-img2 .bg-wrapper .bg-col i {
+  font-size: 2em;
+  padding-bottom: 0.3em;
+}
+
+.bg-img2 .bg-wrapper .bg-col .col-number {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.bg-img2 .bg-wrapper .bg-col .col-description {
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+#packSection,
+.activeW {
+  -webkit-animation: packAnimation 1.5s ease-out 0.2s backwards;
+          animation: packAnimation 1.5s ease-out 0.2s backwards;
+  width: 60%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 6em 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#packSection p,
+.activeW p {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+#packSection p::first-letter,
+.activeW p::first-letter {
+  text-transform: capitalize;
+}
+
+#packSection p span,
+.activeW p span {
+  color: #3578b6;
+  font-weight: bold;
+}
+
+#packSection .packs,
+.activeW .packs {
+  background-color: #e9e9e9;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#packSection .packs::before,
+.activeW .packs::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  top: 10%;
+  height: 80%;
+  width: 2px;
+  background-color: #3578b6;
+  border-radius: 5px;
+}
+
+#packSection .packs .left-col, #packSection .packs .right-col,
+.activeW .packs .left-col,
+.activeW #packSection .packs .right-col,
+#packSection .activeW .packs .right-col,
+.activeW .packs .right-col {
+  width: 80%;
+  padding: 2em 0;
+  margin: 0 auto;
+}
+
+#packSection .packs .left-col .span-div, #packSection .packs .right-col .span-div,
+.activeW .packs .left-col .span-div,
+.activeW #packSection .packs .right-col .span-div,
+#packSection .activeW .packs .right-col .span-div,
+.activeW .packs .right-col .span-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0.2em;
+  font-size: 1.5em;
+}
+
+#packSection .packs .left-col .span-div .member, #packSection .packs .right-col .span-div .member,
+.activeW .packs .left-col .span-div .member,
+.activeW #packSection .packs .right-col .span-div .member,
+#packSection .activeW .packs .right-col .span-div .member,
+.activeW .packs .right-col .span-div .member {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #3578b6;
+}
+
+#packSection .packs .left-col .span-div .price, #packSection .packs .right-col .span-div .price,
+.activeW .packs .left-col .span-div .price,
+.activeW #packSection .packs .right-col .span-div .price,
+#packSection .activeW .packs .right-col .span-div .price,
+.activeW .packs .right-col .span-div .price {
+  font-weight: bold;
+}
+
+#packSection .packs .left-col ul, #packSection .packs .right-col ul,
+.activeW .packs .left-col ul,
+.activeW #packSection .packs .right-col ul,
+#packSection .activeW .packs .right-col ul,
+.activeW .packs .right-col ul {
+  list-style-type: "\2713";
+  font-size: 1.1em;
+  padding-top: 2em;
+  padding-left: 1em;
+}
+
+#packSection .packs .left-col ul li, #packSection .packs .right-col ul li,
+.activeW .packs .left-col ul li,
+.activeW #packSection .packs .right-col ul li,
+#packSection .activeW .packs .right-col ul li,
+.activeW .packs .right-col ul li {
+  padding: 0.3em 0 0.3em 0.3em;
+}
+
+#packSection .packs .left-col .join-form-btn, #packSection .packs .right-col .join-form-btn,
+.activeW .packs .left-col .join-form-btn,
+.activeW #packSection .packs .right-col .join-form-btn,
+#packSection .activeW .packs .right-col .join-form-btn,
+.activeW .packs .right-col .join-form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#packSection .packs .left-col .join-form-btn .join-btn, #packSection .packs .right-col .join-form-btn .join-btn,
+.activeW .packs .left-col .join-form-btn .join-btn,
+.activeW #packSection .packs .right-col .join-form-btn .join-btn,
+#packSection .activeW .packs .right-col .join-form-btn .join-btn,
+.activeW .packs .right-col .join-form-btn .join-btn {
+  padding: 0.4em 1.5em;
+  font-size: 1.5em;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#packSection .packs .left-col .join-form-btn .join-btn:hover, #packSection .packs .right-col .join-form-btn .join-btn:hover,
+.activeW .packs .left-col .join-form-btn .join-btn:hover,
+.activeW #packSection .packs .right-col .join-form-btn .join-btn:hover,
+#packSection .activeW .packs .right-col .join-form-btn .join-btn:hover,
+.activeW .packs .right-col .join-form-btn .join-btn:hover {
+  cursor: pointer;
+  background-color: #25374b;
+}
+
+#packSection .packs .right-col,
+.activeW .packs .right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#packSection .packs .right-col .span-div > .member,
+.activeW .packs .right-col .span-div > .member {
+  color: black;
+}
+
+#packSection .packs .right-col .span-div > .price,
+.activeW .packs .right-col .span-div > .price {
+  color: #3578b6;
+}
+
+#packSection .packs .right-col .join-form-btn,
+.activeW .packs .right-col .join-form-btn {
+  margin-top: auto;
+}
+
+#packSection .packs .right-col .join-form-btn .join-btn,
+.activeW .packs .right-col .join-form-btn .join-btn {
+  background-color: #3578b6;
+}
+
+#packSection .packs .right-col .join-form-btn .join-btn:hover,
+.activeW .packs .right-col .join-form-btn .join-btn:hover {
+  background-color: #214b71;
+}
+
+footer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #214b71;
+  background-image: url("../images/logo.svg");
+}
+
+footer .footer-div {
+  width: 60%;
+  padding-top: 3em;
+  margin: auto;
+  -webkit-box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer .footer-div ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 !important;
+}
+
+footer .footer-div ul a {
+  text-decoration: none;
+  color: #ffffffa2;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer .sub-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: aliceblue;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+footer .sub-wrapper .newsletter {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+footer .sub-wrapper .p-newsletter {
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+footer .sub-wrapper .sub-div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .sub-wrapper .sub-div form input {
+  background-color: transparent;
+  background-image: url(../images/emailSVG.svg);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: left 20px center;
+  padding: 0.5em 3.5em;
+  border: 1px solid #ffffffa2;
+  border-right: none;
+  width: 26.3em;
+  outline: none;
+  color: aliceblue;
+  font-size: 1.3em;
+  margin: 0 auto;
+}
+
+footer .sub-wrapper .sub-div form input::-webkit-input-placeholder {
+  color: aliceblue;
+}
+
+footer .sub-wrapper .sub-div form input:-ms-input-placeholder {
+  color: aliceblue;
+}
+
+footer .sub-wrapper .sub-div form input::-ms-input-placeholder {
+  color: aliceblue;
+}
+
+footer .sub-wrapper .sub-div form input::placeholder {
+  color: aliceblue;
+}
+
+footer .sub-wrapper .sub-div form .sub-now {
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid transparent;
+  font-size: 1.3em;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+footer .sub-wrapper .sub-div form .sub-now:hover {
+  background-color: #25374b;
+  color: aliceblue;
+}
+
+footer .copyright {
+  text-align: center;
+  letter-spacing: 2px;
+  color: aliceblue;
+  font-size: 0.9em;
+  padding-top: 4em;
+  padding-bottom: 1rem;
+}
+
+footer .copyright p::first-letter {
+  font-size: 1.1em;
+}
+
+#popUpSubscription, #popContact,
+.active-popUp,
+.active-popUp {
+  background-color: #25374b;
+  color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  padding: 3em;
+  border-radius: 10px;
+}
+
+#popUpSubscription i, #popContact i, .active-popUp i,
+.active-popUp i {
+  font-size: 4em;
+  position: fixed;
+  top: -20px;
+  color: #3578b6;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+#popUpSubscription .popUp-subs-title, #popContact .popUp-subs-title, .active-popUp .popUp-subs-title,
+.active-popUp .popUp-subs-title {
+  font-size: 2.5em;
+  padding-top: 0.5em;
+}
+
+#popUpSubscription .popUp-subs-message, #popContact .popUp-subs-message, .active-popUp .popUp-subs-message,
+.active-popUp .popUp-subs-message {
+  font-size: 1.3em;
+  padding-top: 0.5em;
+}
+
+#popUpSubscription .popUp-sub-end-message, #popContact .popUp-sub-end-message, .active-popUp .popUp-sub-end-message,
+.active-popUp .popUp-sub-end-message {
+  font-size: 1.3em;
+}
+
+#popUpSubscription #popUpCloseBtn, #popContact #popUpCloseBtn, .active-popUp #popUpCloseBtn, #popContact #popUpCloseBtnContact,
+#popUpSubscription .active-popUp #popUpCloseBtnContact, .active-popUp #popUpSubscription #popUpCloseBtnContact,
+.active-popUp #popUpCloseBtnContact,
+.active-popUp #popUpCloseBtn,
+.active-popUp #popContact #popUpCloseBtnContact,
+#popContact .active-popUp #popUpCloseBtnContact,
+.active-popUp #popUpCloseBtnContact {
+  margin-top: 2em;
+  background-color: #3578b6;
+  border: none;
+  padding: 0.5em 1.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 50%;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.4);
+  color: #e9e9e9;
+}
+
+#popUpSubscription #popUpCloseBtn:hover, #popContact #popUpCloseBtn:hover, .active-popUp #popUpCloseBtn:hover, #popContact #popUpCloseBtnContact:hover,
+#popUpSubscription .active-popUp #popUpCloseBtnContact:hover, .active-popUp #popUpSubscription #popUpCloseBtnContact:hover,
+.active-popUp #popUpCloseBtnContact:hover,
+.active-popUp #popUpCloseBtn:hover,
+.active-popUp #popContact #popUpCloseBtnContact:hover,
+#popContact .active-popUp #popUpCloseBtnContact:hover,
+.active-popUp #popUpCloseBtnContact:hover {
+  background-color: aliceblue;
+  color: #25374b;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+#popUpSubscription.active-popUp, .active-popUp#popContact,
+.active-popUp {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+#createAcc,
+.visible {
+  width: 100%;
+  height: 100vh;
+  background-color: #e9e9e9;
+  background-size: cover;
+  margin: auto;
+  position: fixed;
+  top: -1100px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#createAcc .user-photo,
+.visible .user-photo {
+  width: 60%;
+  height: 100%;
+}
+
+#createAcc .user-photo img,
+.visible .user-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+#createAcc i,
+.visible i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em 0.5em 0 0;
+  font-size: 3em;
+  z-index: 105;
+}
+
+#createAcc i:hover,
+.visible i:hover {
+  cursor: pointer;
+}
+
+#createAcc .create-or-signin,
+.visible .create-or-signin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  height: 70vh;
+  width: 50%;
+}
+
+#createAcc .create-or-signin .acc-btns,
+.visible .create-or-signin .acc-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 70%;
+  margin: 1em auto;
+}
+
+#createAcc .create-or-signin .acc-btns .acc-btn,
+.visible .create-or-signin .acc-btns .acc-btn {
+  padding: 0.5em 2em;
+  background-color: #3578b6;
+  color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1em;
+}
+
+#createAcc .create-or-signin .acc-btns .acc-btn:hover,
+.visible .create-or-signin .acc-btns .acc-btn:hover {
+  cursor: pointer;
+  background-color: #25374b;
+  color: aliceblue;
+}
+
+#createAcc .create-or-signin .acc-btns .acc-btn:focus,
+.visible .create-or-signin .acc-btns .acc-btn:focus {
+  background-image: url("../images/form-img/right-arrow-svg.svg");
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+  background-size: 15px;
+  padding: 0.5em 2.3em;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  background-color: #25374b;
+}
+
+#createAcc .create-or-signin #signUpSection, #createAcc .create-or-signin #loginSection,
+#createAcc .create-or-signin .activeW,
+#createAcc .visible .create-or-signin .activeW, .visible #createAcc .create-or-signin .activeW,
+#createAcc .create-or-signin .activeW,
+.visible .create-or-signin #signUpSection,
+.visible #createAcc .create-or-signin #loginSection,
+#createAcc .visible .create-or-signin #loginSection,
+.visible #createAcc .create-or-signin .activeW,
+#createAcc .visible .create-or-signin .activeW,
+.visible .create-or-signin #loginSection,
+.visible .create-or-signin .activeW,
+.visible .create-or-signin .activeW {
+  padding-top: 0.5em;
+  -webkit-animation: signUpFormAnim 0.5s ease-in 0s forwards;
+          animation: signUpFormAnim 0.5s ease-in 0s forwards;
+  width: 100%;
+}
+
+#createAcc .create-or-signin #signUpSection form, #createAcc .create-or-signin #loginSection form, #createAcc .create-or-signin .activeW form, #createAcc .visible .create-or-signin .activeW form, .visible #createAcc .create-or-signin .activeW form,
+#createAcc .create-or-signin .activeW form,
+.visible .create-or-signin #signUpSection form,
+.visible #createAcc .create-or-signin #loginSection form,
+#createAcc .visible .create-or-signin #loginSection form,
+.visible #createAcc .create-or-signin .activeW form,
+#createAcc .visible .create-or-signin .activeW form,
+.visible .create-or-signin #loginSection form,
+.visible .create-or-signin .activeW form,
+.visible .create-or-signin .activeW form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+#createAcc .create-or-signin #signUpSection form .box, #createAcc .create-or-signin #loginSection form .box, #createAcc .create-or-signin .activeW form .box, #createAcc .visible .create-or-signin .activeW form .box, .visible #createAcc .create-or-signin .activeW form .box,
+#createAcc .create-or-signin .activeW form .box,
+.visible .create-or-signin #signUpSection form .box,
+.visible #createAcc .create-or-signin #loginSection form .box,
+#createAcc .visible .create-or-signin #loginSection form .box,
+.visible #createAcc .create-or-signin .activeW form .box,
+#createAcc .visible .create-or-signin .activeW form .box,
+.visible .create-or-signin #loginSection form .box,
+.visible .create-or-signin .activeW form .box,
+.visible .create-or-signin .activeW form .box {
+  background-color: transparent;
+  border: 1px solid #3578b6;
+  outline: none;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+#createAcc .create-or-signin #signUpSection form .box:hover, #createAcc .create-or-signin #loginSection form .box:hover, #createAcc .create-or-signin .activeW form .box:hover, #createAcc .visible .create-or-signin .activeW form .box:hover, .visible #createAcc .create-or-signin .activeW form .box:hover,
+#createAcc .create-or-signin .activeW form .box:hover,
+.visible .create-or-signin #signUpSection form .box:hover,
+.visible #createAcc .create-or-signin #loginSection form .box:hover,
+#createAcc .visible .create-or-signin #loginSection form .box:hover,
+.visible #createAcc .create-or-signin .activeW form .box:hover,
+#createAcc .visible .create-or-signin .activeW form .box:hover,
+.visible .create-or-signin #loginSection form .box:hover,
+.visible .create-or-signin .activeW form .box:hover,
+.visible .create-or-signin .activeW form .box:hover {
+  background-color: #25374b;
+  color: aliceblue;
+}
+
+#createAcc .create-or-signin #signUpSection form .box::-webkit-input-placeholder, #createAcc .create-or-signin #loginSection form .box::-webkit-input-placeholder, #createAcc .create-or-signin .activeW form .box::-webkit-input-placeholder, #createAcc .visible .create-or-signin .activeW form .box::-webkit-input-placeholder, .visible #createAcc .create-or-signin .activeW form .box::-webkit-input-placeholder,
+#createAcc .create-or-signin .activeW form .box::-webkit-input-placeholder,
+.visible .create-or-signin #signUpSection form .box::-webkit-input-placeholder,
+.visible #createAcc .create-or-signin #loginSection form .box::-webkit-input-placeholder,
+#createAcc .visible .create-or-signin #loginSection form .box::-webkit-input-placeholder,
+.visible #createAcc .create-or-signin .activeW form .box::-webkit-input-placeholder,
+#createAcc .visible .create-or-signin .activeW form .box::-webkit-input-placeholder,
+.visible .create-or-signin #loginSection form .box::-webkit-input-placeholder,
+.visible .create-or-signin .activeW form .box::-webkit-input-placeholder,
+.visible .create-or-signin .activeW form .box::-webkit-input-placeholder {
+  font-size: 1.1em;
+}
+
+#createAcc .create-or-signin #signUpSection form .box:-ms-input-placeholder, #createAcc .create-or-signin #loginSection form .box:-ms-input-placeholder, #createAcc .create-or-signin .activeW form .box:-ms-input-placeholder, #createAcc .visible .create-or-signin .activeW form .box:-ms-input-placeholder, .visible #createAcc .create-or-signin .activeW form .box:-ms-input-placeholder,
+#createAcc .create-or-signin .activeW form .box:-ms-input-placeholder,
+.visible .create-or-signin #signUpSection form .box:-ms-input-placeholder,
+.visible #createAcc .create-or-signin #loginSection form .box:-ms-input-placeholder,
+#createAcc .visible .create-or-signin #loginSection form .box:-ms-input-placeholder,
+.visible #createAcc .create-or-signin .activeW form .box:-ms-input-placeholder,
+#createAcc .visible .create-or-signin .activeW form .box:-ms-input-placeholder,
+.visible .create-or-signin #loginSection form .box:-ms-input-placeholder,
+.visible .create-or-signin .activeW form .box:-ms-input-placeholder,
+.visible .create-or-signin .activeW form .box:-ms-input-placeholder {
+  font-size: 1.1em;
+}
+
+#createAcc .create-or-signin #signUpSection form .box::-ms-input-placeholder, #createAcc .create-or-signin #loginSection form .box::-ms-input-placeholder, #createAcc .create-or-signin .activeW form .box::-ms-input-placeholder, #createAcc .visible .create-or-signin .activeW form .box::-ms-input-placeholder, .visible #createAcc .create-or-signin .activeW form .box::-ms-input-placeholder,
+#createAcc .create-or-signin .activeW form .box::-ms-input-placeholder,
+.visible .create-or-signin #signUpSection form .box::-ms-input-placeholder,
+.visible #createAcc .create-or-signin #loginSection form .box::-ms-input-placeholder,
+#createAcc .visible .create-or-signin #loginSection form .box::-ms-input-placeholder,
+.visible #createAcc .create-or-signin .activeW form .box::-ms-input-placeholder,
+#createAcc .visible .create-or-signin .activeW form .box::-ms-input-placeholder,
+.visible .create-or-signin #loginSection form .box::-ms-input-placeholder,
+.visible .create-or-signin .activeW form .box::-ms-input-placeholder,
+.visible .create-or-signin .activeW form .box::-ms-input-placeholder {
+  font-size: 1.1em;
+}
+
+#createAcc .create-or-signin #signUpSection form .box::placeholder, #createAcc .create-or-signin #loginSection form .box::placeholder, #createAcc .create-or-signin .activeW form .box::placeholder, #createAcc .visible .create-or-signin .activeW form .box::placeholder, .visible #createAcc .create-or-signin .activeW form .box::placeholder,
+#createAcc .create-or-signin .activeW form .box::placeholder,
+.visible .create-or-signin #signUpSection form .box::placeholder,
+.visible #createAcc .create-or-signin #loginSection form .box::placeholder,
+#createAcc .visible .create-or-signin #loginSection form .box::placeholder,
+.visible #createAcc .create-or-signin .activeW form .box::placeholder,
+#createAcc .visible .create-or-signin .activeW form .box::placeholder,
+.visible .create-or-signin #loginSection form .box::placeholder,
+.visible .create-or-signin .activeW form .box::placeholder,
+.visible .create-or-signin .activeW form .box::placeholder {
+  font-size: 1.1em;
+}
+
+#createAcc .create-or-signin #signUpSection form .agree, #createAcc .create-or-signin #loginSection form .agree, #createAcc .create-or-signin .activeW form .agree, #createAcc .visible .create-or-signin .activeW form .agree, .visible #createAcc .create-or-signin .activeW form .agree,
+#createAcc .create-or-signin .activeW form .agree,
+.visible .create-or-signin #signUpSection form .agree,
+.visible #createAcc .create-or-signin #loginSection form .agree,
+#createAcc .visible .create-or-signin #loginSection form .agree,
+.visible #createAcc .create-or-signin .activeW form .agree,
+#createAcc .visible .create-or-signin .activeW form .agree,
+.visible .create-or-signin #loginSection form .agree,
+.visible .create-or-signin .activeW form .agree,
+.visible .create-or-signin .activeW form .agree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#createAcc .create-or-signin #signUpSection form .agree p, #createAcc .create-or-signin #loginSection form .agree p, #createAcc .create-or-signin .activeW form .agree p, #createAcc .visible .create-or-signin .activeW form .agree p, .visible #createAcc .create-or-signin .activeW form .agree p,
+#createAcc .create-or-signin .activeW form .agree p,
+.visible .create-or-signin #signUpSection form .agree p,
+.visible #createAcc .create-or-signin #loginSection form .agree p,
+#createAcc .visible .create-or-signin #loginSection form .agree p,
+.visible #createAcc .create-or-signin .activeW form .agree p,
+#createAcc .visible .create-or-signin .activeW form .agree p,
+.visible .create-or-signin #loginSection form .agree p,
+.visible .create-or-signin .activeW form .agree p,
+.visible .create-or-signin .activeW form .agree p {
+  padding-left: 0.5em;
+  padding-bottom: 0;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+#createAcc .create-or-signin #signUpSection form .send-message, #createAcc .create-or-signin #loginSection form .send-message, #createAcc .create-or-signin .activeW form .send-message, #createAcc .visible .create-or-signin .activeW form .send-message, .visible #createAcc .create-or-signin .activeW form .send-message,
+#createAcc .create-or-signin .activeW form .send-message,
+.visible .create-or-signin #signUpSection form .send-message,
+.visible #createAcc .create-or-signin #loginSection form .send-message,
+#createAcc .visible .create-or-signin #loginSection form .send-message,
+.visible #createAcc .create-or-signin .activeW form .send-message,
+#createAcc .visible .create-or-signin .activeW form .send-message,
+.visible .create-or-signin #loginSection form .send-message,
+.visible .create-or-signin .activeW form .send-message,
+.visible .create-or-signin .activeW form .send-message {
+  padding: 0.5em 1em;
+  border: none;
+  font-size: 1.1em;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  margin: 0 auto;
+  background-color: #3578b6;
+  color: aliceblue;
+  width: 100%;
+}
+
+#createAcc .create-or-signin #signUpSection form .send-message:hover, #createAcc .create-or-signin #loginSection form .send-message:hover, #createAcc .create-or-signin .activeW form .send-message:hover, #createAcc .visible .create-or-signin .activeW form .send-message:hover, .visible #createAcc .create-or-signin .activeW form .send-message:hover,
+#createAcc .create-or-signin .activeW form .send-message:hover,
+.visible .create-or-signin #signUpSection form .send-message:hover,
+.visible #createAcc .create-or-signin #loginSection form .send-message:hover,
+#createAcc .visible .create-or-signin #loginSection form .send-message:hover,
+.visible #createAcc .create-or-signin .activeW form .send-message:hover,
+#createAcc .visible .create-or-signin .activeW form .send-message:hover,
+.visible .create-or-signin #loginSection form .send-message:hover,
+.visible .create-or-signin .activeW form .send-message:hover,
+.visible .create-or-signin .activeW form .send-message:hover {
+  background-color: #25374b;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+#createAcc .create-or-signin #loginSection,
+#createAcc .create-or-signin .activeW,
+.visible .create-or-signin #loginSection,
+.visible .create-or-signin .activeW {
+  margin: 0 auto;
+}
+
+.search-results {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  background-color: aliceblue;
+  height: 1000px;
+  width: 100%;
+  overflow: scroll;
+  padding-bottom: 8em;
+}
+
+.search-results i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em 0.5em 0 0;
+  font-size: 3em;
+  z-index: 120;
+}
+
+.search-results i:hover {
+  cursor: pointer;
+}
+
+.search-results #searchBar {
+  padding: 1em;
+  width: 60%;
+  margin: 8em auto 3em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border-radius: 5px;
+  border-color: #3578b6;
+  outline: none;
+  font-size: 1.5em;
+  opacity: 0.5;
+}
+
+.search-results #searchBar::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+.search-results #searchBar:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.search-results #searchBar::-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.search-results #searchBar::placeholder {
+  text-transform: uppercase;
+}
+
+.search-results #searchBar:focus {
+  background-color: #d5e2e9;
+  opacity: 1;
+}
+
+.search-results .show-posts {
+  width: 60%;
+}
+
+.search-results .show-posts .col {
+  width: 50%;
+  margin: auto;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99999;
+  background: white;
+}
+
+#loader .loader {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.show-more-photos {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin: 0 auto !important;
+  padding: 0;
+  font-size: 2.5em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.blur-active {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.disabled {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .hide-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block !important;
+    margin: auto !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+  .logo-ctn, header .navbar-styling .logo-ctn-scroll {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .nav-ul-mobile {
+    opacity: 80%;
+    position: fixed;
+    bottom: 10%;
+    left: 0;
+    -webkit-animation: navMobile 1s ease-out 0s backwards;
+            animation: navMobile 1s ease-out 0s backwards;
+    z-index: 99999;
+  }
+  .nav-ul-mobile ul li a:hover {
+    color: #3578b6;
+  }
+  header #contactSection {
+    width: 74.5%;
+  }
+  header #aboutSection {
+    width: 74.5%;
+  }
+  .carousel-section {
+    height: 570px;
+  }
+  .carousel-section .poster {
+    width: 74.5%;
+    height: 750px;
+  }
+  .carousel-section .poster .carousel-item {
+    height: 450px;
+  }
+  .carousel-section .poster .carousel-item img {
+    height: 700px;
+  }
+  .card-section, .search-results .show-posts {
+    width: 74.5%;
+  }
+  .bg-img1, .bg-img2 {
+    min-height: 375px;
+  }
+  .community-photos > .community-h3 {
+    font-size: 5em;
+  }
+  .community-photos > .community-h4 {
+    font-size: 2.5em;
+  }
+  .span-2 {
+    grid-column: span 2;
+  }
+  .img-area-span-row-2 {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  .img-area-span-col-3 {
+    grid-column: span 2 !important;
+  }
+  .img-area-span-col-2-row-2 {
+    grid-column: span 4 !important;
+    grid-row: span 1 !important;
+  }
+  .img-area-span-col-2 {
+    grid-column: span 2;
+  }
+  .span-col-4 {
+    grid-column: span 4 !important;
+  }
+  .bg-img2 {
+    min-height: 375px;
+  }
+  .bg-img2 .bg-wrapper > .bg-col i {
+    font-size: 1.5em;
+  }
+  .bg-img2 .bg-wrapper > .bg-col .col-number {
+    font-size: 3em;
+  }
+  .bg-img2 .bg-wrapper > .bg-col .col-description {
+    font-size: 1.5em;
+  }
+  #packSection,
+  .activeW {
+    width: 74.5%;
+  }
+  #packSection p,
+  .activeW p {
+    font-size: 1.5em;
+  }
+  #packSection .join-btn,
+  .activeW .join-btn {
+    padding: 0.3em 1.2em !important;
+    font-size: 1.3em !important;
+  }
+  footer > .footer-div {
+    width: 74.5%;
+  }
+  footer > .footer-div ul > a {
+    font-size: 1.3em;
+  }
+  footer > .footer-div .sub-wrapper .newsletter {
+    font-size: 2.2em;
+  }
+  footer > .footer-div .sub-wrapper .p-newsletter {
+    font-size: 1.1em;
+    width: 65%;
+    margin: auto;
+    padding-bottom: 1em;
+  }
+  footer > .footer-div .sub-wrapper .sub-div form input {
+    width: 100%;
+  }
+  footer > .footer-div .copyright {
+    padding-top: 0;
+    padding-bottom: 4em;
+  }
+  #popUpSubscription, #popContact,
+  .active-popUp {
+    width: 60%;
+  }
+  #searchBar {
+    width: 74.5% !important;
+  }
+  .show-posts .col {
+    width: 74.5% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header #contactSection form .submit-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header #contactSection form .submit-form p {
+    text-align: center;
+  }
+  header #aboutSection .about-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  header #aboutSection .about-wrapper .about-img {
+    width: 100%;
+  }
+  header #aboutSection .about-wrapper .about-description {
+    width: 100%;
+    margin: auto;
+    padding-top: 1em;
+  }
+  .send-message-btn {
+    font-size: 0.8em;
+  }
+  .carousel-section {
+    height: 480px;
+  }
+  .carousel-section .poster {
+    width: 74.5%;
+    height: 650px;
+  }
+  .carousel-section .poster h1, .carousel-section .poster h2 {
+    font-size: 1.5em;
+  }
+  .carousel-section .poster .carousel-item {
+    height: 375px;
+  }
+  .carousel-section .poster .carousel-item img {
+    height: 700px;
+  }
+  .bg-img1, .bg-img2 {
+    min-height: 300px;
+  }
+  .community-photos .community-h3 {
+    font-size: 4em;
+  }
+  .community-photos .community-h4 {
+    font-size: 2em;
+  }
+  .community-photos .community-photos-ctn {
+    padding: 3em 4.5em;
+  }
+  .community-photos .community-photos-ctn .span-mobile {
+    grid-column: span 4 !important;
+    grid-row: span 1 !important;
+  }
+  .bg-img2 .bg-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2em 0;
+  }
+  .bg-img2 .bg-wrapper .bg-col {
+    padding: 1.5em 0;
+  }
+  #packSection > .packs {
+    display: block;
+  }
+  #packSection > .packs::before {
+    display: none;
+  }
+  footer > .footer-div .sub-wrapper > .sub-div form input {
+    background-size: 20px;
+    background-position: left 10px center;
+    padding: 0.5em 2em;
+    width: 100%;
+    font-size: 1.1em;
+  }
+  footer > .footer-div .sub-wrapper > .sub-div form .sub-now {
+    font-size: 1.1em;
+  }
+  #popUpSubscription, #popContact,
+  .active-popUp {
+    width: 74.5%;
+  }
+  #popUpSubscription .popUp-subs-title, #popContact .popUp-subs-title, .active-popUp .popUp-subs-title {
+    font-size: 2em;
+  }
+  #popUpSubscription .popUp-subs-message, #popContact .popUp-subs-message, .active-popUp .popUp-subs-message {
+    font-size: 1.1em;
+  }
+  #popUpSubscription .popUp-sub-end-message, #popContact .popUp-sub-end-message, .active-popUp .popUp-sub-end-message {
+    font-size: 1.1em;
+  }
+  #createAcc .user-photo {
+    display: none;
+  }
+  #createAcc .create-or-signin {
+    width: 74.5%;
+  }
+  #createAcc .create-or-signin .acc-btns {
+    width: 100%;
+  }
+  #createAcc .create-or-signin #signUpSection form, #createAcc .create-or-signin #loginSection form, #createAcc .create-or-signin .activeW form, #createAcc .visible .create-or-signin .activeW form, .visible #createAcc .create-or-signin .activeW form {
+    width: 100%;
+  }
+  #createAcc .create-or-signin #signUpSection form .box, #createAcc .create-or-signin #loginSection form .box, #createAcc .create-or-signin .activeW form .box, #createAcc .visible .create-or-signin .activeW form .box, .visible #createAcc .create-or-signin .activeW form .box {
+    padding: 0.5em;
+  }
+  #searchBar {
+    width: 74.5% !important;
+  }
+  .show-posts .col {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header #contactSection form {
+    width: 94%;
+  }
+  header #contactSection form label {
+    font-size: 0.8em !important;
+  }
+  header #contactSection form textarea::-webkit-input-placeholder {
+    font-size: 0.8em !important;
+  }
+  header #contactSection form textarea:-ms-input-placeholder {
+    font-size: 0.8em !important;
+  }
+  header #contactSection form textarea::-ms-input-placeholder {
+    font-size: 0.8em !important;
+  }
+  header #contactSection form textarea::placeholder {
+    font-size: 0.8em !important;
+  }
+  header #contactSection form .submit-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header #contactSection form .submit-form p {
+    text-align: center;
+  }
+  header #aboutSection .about-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  header #aboutSection .about-wrapper .about-img {
+    width: 94%;
+  }
+  header #aboutSection .about-wrapper .about-description {
+    width: 94%;
+    margin: auto;
+    padding-top: 1em;
+  }
+  .send-message-btn {
+    font-size: 0.8em;
+  }
+  .carousel-section {
+    height: 380px;
+  }
+  .carousel-section .poster {
+    width: 65%;
+    height: 495px;
+  }
+  .carousel-section .poster h1, .carousel-section .poster h2 {
+    font-size: 1.3em;
+    padding: 1.5em 0 !important;
+  }
+  .carousel-section .poster .carousel-item {
+    height: 320px;
+  }
+  .carousel-section .poster .carousel-item img {
+    height: 360px;
+  }
+  .card-section, .search-results .show-posts {
+    width: 65%;
+  }
+  .bg-img1, .bg-img2 {
+    min-height: 250px;
+  }
+  .community-photos .community-h3 {
+    font-size: 3.5em;
+  }
+  .community-photos .community-h4 {
+    font-size: 2em;
+  }
+  .community-photos .community-photos-ctn {
+    padding: 3em 4.5em;
+  }
+  .community-photos .community-photos-ctn .span-mobile {
+    grid-column: span 4 !important;
+    grid-row: span 1 !important;
+  }
+  .bg-img2 .bg-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2em 0;
+  }
+  .bg-img2 .bg-wrapper .bg-col {
+    padding: 1.5em 0;
+  }
+  #packSection {
+    width: 65%;
+  }
+  #packSection .packs .left-col > ul, #packSection .packs .right-col > ul {
+    font-size: 0.9em;
+  }
+  footer > .footer-div {
+    width: 65%;
+  }
+  footer > .footer-div ul {
+    display: none;
+  }
+  footer > .footer-div .sub-wrapper > .p-newsletter {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  footer > .footer-div .sub-wrapper > .sub-div form {
+    padding: 0 0.5em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer > .footer-div .sub-wrapper > .sub-div form input {
+    border-right: 0.5px inset;
+  }
+  footer > .footer-div .sub-wrapper > .sub-div form .sub-now {
+    font-size: 1.1em;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

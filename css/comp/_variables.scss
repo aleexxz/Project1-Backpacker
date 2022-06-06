@@ -1,0 +1,33 @@
+// width
+$width: 60%;
+$widthTM: 74.5%;
+// colors
+$clr1: rgb(53, 120, 182);
+$clr2: aliceblue;
+$clr3: black;
+$clr4: rgb(233, 233, 233);
+$hoverClr: rgb(37, 55, 75);
+$bg-clr: #ffffffa2;
+$footerBg: rgb(33, 75, 113);
+// font-weight
+$fwBold: bold;
+// font-size
+$fSize1-1: 1.1em;
+$fSize1-3: 1.3em;
+$fSize1-5: 1.5em;
+$fSize2: 2em;
+$fSize2-5: 2.5em;
+$fSize3: 3em;
+$fSize3-5: 3.5em;
+$fSize4: 4em;
+$fSize5-5: 5em;
+$fSizeBig: 7em;
+// text-transform
+$uppC: uppercase;
+$cap: capitalize;
+// BG IMG
+$bgImg1: url("../images/bg-images/bg-img1.jpg");
+$bgImg2: linear-gradient(to right,
+#1f89d448,
+#095ab7ef),
+url("../images/bg-images/bg-img2.jpg");

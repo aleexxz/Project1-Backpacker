@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project1_Rusu Cosmin Alexandru_Backpacker</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,500;1,600;1,700&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <!-- BOOTSTRAP V5.1.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon (1).ico" type="image/x-icon">
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div id="loader">
+        <img src="loader/Ripple-1s-200px.gif" alt="loader" class="loader" />
+    </div>
+    <!-- HEADER -->
+    <header class="blur">
+        <!-- NAV MAIN DIV -->
+        <div class="row align-items-baseline py-4 w-100 navbar-styling">
+            <!-- VIDEO -->
+            <video id="video" src="videos/video-resize.mp4" class="hide show" autoplay loop muted></video>
+            <!-- NAV LEFT COL -->
+            <nav class="col-4 hide-desktop">
+                <ul class="p-0 m-0">
+                    <li><a href="#packSection" class="goToPack">packages</a></li>
+                    <li><a href="#" class="goToAbout">about</a></li>
+                    <li><a href="#" class="goToContact">contact</a></li>
+                </ul>
+            </nav>
+            <!-- END OF NAV LEFT COL -->
+
+            <!-- LOGO CENTER COL -->
+            <div class="logo-ctn col-4">
+                <img src="images/logo.svg" alt="logo" class="logo-svg" />
+                <a href="index.html" class="logo">backpacker.</a>
+            </div>
+            <div class="logo-ctn-scroll" id="logoScroll">
+                <img src="images/logo.svg" alt="logo" class="logo-svg" />
+                <a href="#" class="logo">backpacker.</a>
+            </div>
+            <!--  END OF LOGO CENTER COL -->
+
+            <!-- LINK BTNS RIGHT COL -->
+            <div class="col-4 right-col hide-desktop">
+                <div class="d-flex justify-content-end align-items-baseline">
+                    <a href="#" class="search-btn fs-5 py-4" id="searchBtn1">
+                        <i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="btn join-now-btn join-now fs-5" role="button"><i class="fa-regular fa-user"></i></a>
+                </div>
+            </div>
+            <!-- END OF BTNS RIGHT COL -->
+
+            <!-- NAV MOBILE -->
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4 d-flex justify-content-center position-fixed nav-ul-mobile w-100">
+                    <ul class="py-2 m-0 list-unstyled text-center fs-4">
+                        <li><a href="#packSection" class="text-decoration-none link-light goToPack">packages</a></li>
+                        <li class="py-2"><a href="#" class="text-decoration-none link-light goToAbout">about</a></li>
+                        <li><a href="#" class="text-decoration-none  link-light goToContact">contact</a></li>
+                        <li class="py-2"><a href="#" class="text-decoration-none link-light join-now">sign up /
+                                login</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none link-light" id="searchBtn2">search</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END OF NAV MOBILE -->
+
+            <!-- TABLET / MOBILE BS BTN -->
+            <nav class="navbar navbar-dark fixed-bottom navbar-mobile w-100">
+                <div class="container-fluid d-flex justify-content-center">
+                    <button class="navbar-toggler bg-black border-2 rounded-circle border-primary p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- END OF TABLET / MOBILE BS BTN -->
+        </div>
+        <!-- END OF NAV MAIN DIV -->
+
+        <!-- FIXED NAVBAR RIGHT -->
+        <div class="social-icons fs-3 p-4">
+            <ul class="list-unstyled m-0">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i
+                            class="fab fa-instagram-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- END OF FIXED NAVBAR -->
+
+        <!-- CONTACT SECTION PAGE -->
+        <div id="contactSection">
+            <!-- CONTACT TITLE -->
+            <div class="contact-wrap">
+                <h3 class="contact-title">contact</h2>
+                    <hr class="hr1" />
+            </div>
+            <!-- THE FORM -->
+            <form action="" id="contactForm">
+                <fieldset>
+                    <label for="firstname">First Name <span class="red-star">*</span></label>
+                    <input type="text" name="firstname" class="box" required>
+                    <label for="lastname">Last Name <span class="red-star">*</span></label>
+                    <input type="text" name="lastname" class="box" required>
+                    <label for="email">E-Mail <span class="red-star">*</span></label>
+                    <input type="email" name="email" required class="box" />
+                    <label for="text">Subject <span class="red-star">*</span></label>
+                    <input type="text" name="subject" minlength="5" class="box" required>
+
+                    <label for="message">Leave Us A Message...<span class="red-star">*</span></label>
+                    <textarea name="message" cols="30" rows="7" placeholder="Your text here" class="box" minlength="15" maxlength="70" required></textarea>
+                    <div class="submit-form">
+                        <!-- THE PARAGRAPH -->
+                        <p>email@backpacker.com</p>
+                        <!-- SUBMIT BUTTON -->
+                        <input type="submit" class="send-message-btn popup-send" id="contactSendBtn" value="Send">
+                    </div>
+                </fieldset>
+            </form>
+            <!-- END OF THE FORM -->
+        </div>
+        <!-- END OF CONTACT SECTION PAGE -->
+
+        <!-- ABOUT SECTION PAGE -->
+        <div id="aboutSection">
+            <div class="about-wrap">
+                <h3 class="about-title">
+                    about us
+                </h3>
+                <hr class="hr2" />
+            </div>
+            <div class="about-wrapper">
+                <div class="about-img">
+                    <img src="images/about-img/about-img.jpg" alt="about-us-photo">
+                </div>
+                <div class="about-description">
+                    <span class="who-are-we">who are we?</span>
+                    <p class="about-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cumque necessitatibus placeat minus aliquid iusto, impedit modi nesciunt vitae accusamus dicta corrupti asperiores, facere obcaecati praesentium at quod similique maiores
+                        perspiciatis tempore inventore quisquam temporibus saepe eius! Odit nisi iste velit impedit esse neque dolore. Excepturi omnis maxime vel! Perspiciatis!
+                        </br>
+                        </br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nulla qui dolorem consequuntur odio vero pariatur? Velit dolores quod magnam perspiciatis magni dicta nisi, beatae animi veritatis, reprehenderit vel pariatur fugiat fuga vero aspernatur sit!
+                        </br>
+                        </br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero deserunt, tempora numquam laborum minus voluptate?</p>
+                </div>
+            </div>
+        </div>
+        <!-- END OF ABOUT SECTION -->
+    </header>
+    <!-- END OF HEADER -->
+    <main class="hide show blur" id="main">
+        <!-- CAROUSEL SECTION -->
+        <section class="carousel-section">
+            <div class="poster">
+                <h1 class="p-5 text-light type-text">What's your next adventure?</h1>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/slider-images/img1-slider.jpg" class="d-block w-100" alt="image 1" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="fs-3">Backpacking with your tent</h5>
+                                <p class="fs-5">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque perspiciatis maiores animi, ipsam molestias iure.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slider-images/img2-slider.jpg" class="d-block w-100" alt="image 2" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="fs-3">And enjoying the nice views...</h5>
+                                <p class="fs-5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ab?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slider-images/img3-slider.jpg" class="d-block w-100" alt="image 3" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="fs-3">Or staying at a nice and welcoming cabin</h5>
+                                <p class="fs-5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iste optio necessitatibus obcaecati suscipit repudiandae facilis ex possimus soluta porro?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- H2 TEXT -->
+                <h2 class="p-5 text-light">Start planning today.</h2>
+            </div>
+        </section>
+        <!-- END OF CAROUSEL SECTION -->
+
+        <!-- CARD SECTION -->
+        <section class="card-section py-5 ">
+            <!-- CARDS -->
+            <span>Recent posts</span>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <button type="button" class="modal-btn-style" data-bs-toggle="modal" data-bs-target="#post1">
+                        <div class="card h-100">
+                            <img src="images/card-images/img1-card.jpg" class="card-img-top" alt="image" />
+                            <div class="card-body">
+                                <h5 class="card-title text-capitalize fw-bold text-start">
+                                    backpacks: an owner's manual
+                                </h5>
+                                <p class="card-text text-start">
+                                    Understanding suspension and construction is key to finding the right fit—and proper
+                                    maintenance and repair will ensure your load-hauler lasts thousands of miles.
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <small class="text-muted">John Wick</small>
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <a href="#packSection">
+                        <div class="card h-100" id="locked-card">
+                            <img src="images/card-images/img2-card.jpg" class="card-img-top" alt="image" />
+                            <div class="card-body">
+                                <h5 class="card-title text-capitalize fw-bold">
+                                    The Hiker's Guide to Staying Hydrated and Treating Dehydration
+                                </h5>
+                                <p class="card-text">
+                                    A hydrated hiker is a happy hiker. Feel good and crush miles with these tips for identifying and avoiding dehydration.
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <small class="text-muted">Jane Doe</small>
+                                <small class="text-muted">Last updated 2 hours ago</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <button type="button" class="modal-btn-style h-100" data-bs-toggle="modal" data-bs-target="#post3">
+                        <div class="card h-100">
+                            <img src="images/card-images/img3-card.jpg" class="card-img-top" alt="image" />
+                            <div class="card-body">
+                                <h5 class="card-title text-capitalize fw-bold text-start">
+                                    how to make hiking fun when hiking sucks
+                                </h5>
+                                <p class="card-text text-start">
+                                    Bad weather, horrendous blisters, endless hills—it's all fun if you look at it the
+                                    right way.
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <small class="text-muted">Sarah Stewart</small>
+                                <small class="text-muted">Last updated 1 days ago</small>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <a href="#packSection">
+                        <div class="card h-100" id="locked-card">
+                            <img src="images/card-images/img4-card.jpg" class="card-img-top" alt="image" />
+                            <div class="card-body">
+                                <h5 class="card-title text-capitalize fw-bold">
+                                    8 tips for better campfire cooking
+                                </h5>
+                                <p class="card-text">
+                                    Primal meets gourmet with campfire cooking. Learn the key techniques for success with this Trail Chef primer on campfire cooking basics.
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <small class="text-muted">Trail Chief Mike Pastrama</small>
+                                <small class="text-muted">Last updated 2 days ago</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <button type="button" class="modal-btn-style h-100" data-bs-toggle="modal" data-bs-target="#post5">
+                        <div class="card h-100">
+                            <img src="images/card-images/img5-card.jpg" class="card-img-top" alt="image" />
+                            <div class="card-body">
+                                <h5 class="card-title text-capitalize fw-bold text-start">
+                                    how to face your fear of backpacking alone
+                                </h5>
+                                <p class="card-text text-start">
+                                    A solo hiking or backpacking trip can either be a freeing or terrifying experience.
+                                    Learn how to prepare and tame your imagination in the backcountry.
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <small class="text-muted">Adam Roy</small>
+                                <small class="text-muted">Last updated 3 days ago</small>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col">
+                    <a href="#packSection">
+                        <div class="card h-100" id="locked-card">
+                            <img src="images/card-images/img6-card.jpg" class="card-img-top" alt="image" />
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">
+                                    8 Tips for Leading a Group Hiking Trip
+                                </h5>
+                                <p class="card-text">
+                                    If you play your cards right, you can turn your non-hiker friends into lifelong backpacking partners.
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <small class="text-muted">George Cole</small>
+                                <small class="text-muted">Last updated 3 days ago</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- END OF CARD SECTION -->
+
+        <div class="bg-img1"></div>
+
+        <!-- COMMUNITY PHOTOS SECTION -->
+        <section class="community-photos ">
+            <h3 class="community-h3 text-center">Community</h3>
+            <h4 class="community-h4 text-center">Photos</h4>
+            <div class="community-photos-ctn py-5">
+                <div class="comm-photo span-2 span-mobile">
+                    <img src="images/community-photos/1.jpg" alt="hiking" />
+                </div>
+                <div class="comm-photo span-2 span-mobile">
+                    <img src="images/community-photos/2.jpg" alt="tents" />
+                </div>
+                <div class="comm-photo img-area-span-row-2 span-mobile">
+                    <img src="images/community-photos/3.jpg" alt="backpack" />
+                </div>
+                <div class="comm-photo span-2 span-mobile">
+                    <img src="images/community-photos/4.jpg" alt="girl&tent" />
+                </div>
+                <div class="comm-photo img-area-span-row-2 span-mobile">
+                    <img src="images/community-photos/5.jpg" alt="backpack" />
+                </div>
+                <div class="comm-photo span-2 span-mobile">
+                    <img src="images/community-photos/6.jpg" alt="fire" />
+                </div>
+                <div class="comm-photo span-2 span-mobile">
+                    <img src="images/community-photos/7.jpg" alt="cooking sausages" />
+                </div>
+                <div class="comm-photo img-area-span-col-3 span-mobile">
+                    <img src="images/community-photos/8.jpg" alt="hiking" />
+                </div>
+                <div class="comm-photo img-area-span-col-2-row-2 span-mobile show-photos">
+                    <img src="images/community-photos/9.jpg" alt="group" />
+                </div>
+                <div class="comm-photo span-2 span-mobile show-photos">
+                    <img src="images/community-photos/10.jpg" alt="tea" />
+                </div>
+                <div class="comm-photo span-2 span-mobile show-photos">
+                    <img src="images/community-photos/11.jpg" alt="tents" />
+                </div>
+                <div class="comm-photo img-area-span-col-2 span-col-4 span-mobile show-photos">
+                    <img src="images/community-photos/12.jpg" alt="tents" />
+                </div>
+            </div>
+        </section>
+        <!-- END OF COMMUNITY PHOTOS SECTION -->
+
+        <!-- BG IMG2 WITH TEXT -->
+        <div class="bg-img2 ">
+            <div class="bg-wrapper">
+                <div class="bg-col">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="col-number" data-target="987">0</div>
+                    <span class="col-description">active users</span>
+                </div>
+                <div class="bg-col">
+                    <i class="fa-regular fa-map"></i>
+                    <div class="col-number" data-target="90">0</div>
+                    <span class="col-description">places visited</span>
+                </div>
+                <div class="bg-col">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <div class="col-number" data-target="10">0</div>
+                    <span class="col-description">years of experience</span>
+                </div>
+                <div class="bg-col">
+                    <i class="fa-regular fa-face-smile-wink"></i>
+                    <div class="col-number" data-target="5000">0</div>
+                    <span class="col-description">happy hikers</span>
+                </div>
+            </div>
+        </div>
+        <!-- END OF BG IMG2 WITH TEXT -->
+        <!-- PACK SECTION -->
+        <section id="packSection">
+            <p>become a <span>member</span> of our community to unlock stories and receive other great perks
+            </p>
+            <div class="packs">
+                <div class="left-col">
+                    <div class="span-div">
+                        <span class="member">Member+</span>
+                        <span>Full access</span>
+                        <span class="price">149 RON / month</span>
+                    </div>
+                    <ul>
+                        <li>Access to member only content on Bakcpacker webpage</li>
+                        <li>Annual gear guides for backpacking, camping, skiing , climbing, and more</li>
+                        <li>Premium access to Backpacker videos made by our guides and 1,000+ hours of exclusive shows
+                        </li>
+                        <li>Backpacker Learn, our new online education hub loaded with more than 2,000 videos across 450 lessons
+                        </li>
+                        <li>Exclusive discounts on gear and travel</li>
+                    </ul>
+                    <div class="join-form-btn">
+                        <input type="button" class="join-btn join-now" value="Join Members+"></input>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <div class="span-div">
+                        <span class="member">Backpacker</span>
+                        <span>Semi access</span>
+                        <span class="price">79 RON / month</span>
+                    </div>
+                    <ul>
+                        <li>Access to all member-exclusive content and gear reviews on Backpacker</li>
+                        <li>Ad-free access to Backpacker</li>
+                        <li>Discounts on gear and on monthly organized trips</li>
+                    </ul>
+                    <div class="join-form-btn">
+                        <input type="button" class="join-btn join-now" value="Join Backpackers"></input>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END OF PACK SECTION -->
+    </main>
+    <!-- END OF MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="blur">
+        <div class="footer-div">
+            <ul>
+                <a href="index.html">
+                    <li>home</li>
+                </a>
+                <a href="#" class="goToAbout">
+                    <li>about</li>
+                </a>
+                <a href="#" class="goToContact">
+                    <li>contact</li>
+                </a>
+            </ul>
+            <div class="sub-wrapper">
+                <h2 class="newsletter">backpacker newsletter</h2>
+                <p class="p-newsletter">The latest gear, trips, stories, and more, beamed to your inbox every week.</p>
+                <div class="sub-div">
+                    <form action="">
+                        <div class="input">
+                            <input type="email" name="email" id="newsletter-email-input" placeholder="Enter your email here *" required />
+                        </div>
+                        <div class="sub-btn">
+                            <button class="sub-now popup-send" id="subscribeBtn" type="submit">subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; BACKPACKER 2022. All rights reserved.</p>
+            </div>
+    </footer>
+    <!--  END OF FOOTER -->
+
+    <!-- POPUP SUBSCRIPTION CTN -->
+    <div id="popUpSubscription">
+        <i class="fa-solid fa-circle-check"></i>
+        <span class="popUp-subs-title">
+            Thank you!
+        </span>
+        <p class="popUp-subs-message">
+            You are now subscribed to BACKPACKER'S newsletter
+        </p>
+        <span class="popUp-sub-end-message">Safe travels!</span>
+        <button type="button" id="popUpCloseBtn">OK</button>
+    </div>
+    <!-- END OF POPUP SUBSCRIPTION CTN -->
+
+    <!-- POPUP CONTACT CTN -->
+    <div id="popContact">
+        <i class="fa-solid fa-circle-check"></i>
+        <span class="popUp-subs-title">
+            Thank you!
+        </span>
+        <p class="popUp-subs-message">
+            Your message was successfully sent. You will be contacted as soon as possible.
+        </p>
+        <span class="popUp-sub-end-message">Safe travels!</span>
+        <button type="button" id="popUpCloseBtnContact">OK</button>
+    </div>
+    <!-- END OF POPUP CONTACT CTN -->
+
+    <!-- JOIN BACKPACKER COMMUNITY FORM / CREATE ACC-->
+    <div id="createAcc">
+        <div class="user-photo">
+            <img src="images/form-img/user-photo2.jpg" alt="">
+        </div>
+        <i class="fa-regular fa-rectangle-xmark" id="closeJoinNow">
+        </i>
+        <div class="create-or-signin">
+            <div class="acc-btns">
+                <button class="acc-btn" id="loginBtn">Login</button>
+                <button class="acc-btn" id="signUpBtn">Sign up</button>
+            </div>
+            <!-- <div id="errorMsg"></div> -->
+            <div onsubmit="signUp(event);" id="signUpSection">
+                <form id="signUpForm">
+                    <input type="text" placeholder="First name" required class="box" id="fName">
+                    <input type="text" placeholder="Last name" required class="box" id="lName">
+                    <input type="email" placeholder="Email adress" required class="box" id="email">
+                    <input type="password" placeholder="Password" required class="box" id="pass">
+                    <select name="gender" class="box">
+                        <option value disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="prefer not to answer">Prefer not to answer</option>
+                        <option value="not listed here">Not listed here</option>
+                    </select>
+                    <input type="text" placeholder="Birthdate" class="box" onfocus="(this.type='date')">
+                    <div class="agree">
+                        <input type="checkbox" required>
+                        <p>I agree to receive emails and offers from Backpacker. I may opt out at any time.
+                        </p>
+                    </div>
+                    <input type="submit" value="Sign up" class="send-message" id="signUpBtnSend">
+                </form>
+            </div>
+            <div onsubmit="signIn(event);" id="loginSection">
+                <form id="loginForm">
+                    <input type="email" placeholder="Email adress" required class="box" id="loginEmail">
+                    <input type="password" placeholder="Password" required class="box" id="loginPass">
+                    <input type="submit" value="Login" class="send-message">
+                    <p id="loginResult"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END OF JOIN FORM -->
+
+    <!-- MODAL TOGGLE SECTION FOR USER CARDS JS-BS -->
+    <!-- MODAL 1 FOR CARD 1 -->
+    <div class="modal fade" id="post1" tabindex="-1" aria-labelledby="post1Label" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+            <div class="modal-content">
+                <img src="images/card-images/img1-card.jpg" class="card-img-top" alt="image" />
+                <div class="modal-header">
+                    <h5 class="modal-title text-capitalize fw-bold" id="post1Label">backpacks: an owner's manual
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>
+                        Understanding suspension and construction is key to finding the right fit—and proper maintenance and repair will ensure your load-hauler lasts thousands of miles.
+                    </h5>
+                    <h4 class="fw-bold pt-2 text-primary">How to Buy a Backpack: Ask the Right Questions</h4>
+                    <hr>
+                    <p>
+                        <span class="fw-bold fs-5">What's my organization style?</span> Are you a stuffer or a neatnik? The former might prefer a big, single-compartment packbag, and the latter, pockets galore. Pick a pack layout that matches your MO
+                        or you'll forever fight your own nature.
+                    </p>
+                    <p>
+                        <span class="fw-bold fs-5">What size am I?</span> Pack size is based on torso length, not height. Here's how to measure: Run a flexible tape measure (or a string) from the bony C7 vertebrae at the base of your neck to the point
+                        right between the tops of your hipbones, or iliac crests. When trying on packs, learn how to adjust them yourself.
+                    </p>
+                    <p>
+                        <span class="fw-bold fs-5">How big of a pack do I need?</span> Bring your kit into the store or grab stuff off the shelf to make sure your prospective purchase can take the load. You can get away with a 45-liter pack for fair-weather
+                        weekends, but consider sizing up to 60-plus if you plan to do some winter camping or take longer trips.
+                    </p>
+                    <p>
+                        <span class="fw-bold fs-5">What kind of suspension?</span> Opt for sturdy aluminum or sprung-steel suspension systems over ultralight or plastic-only models—unless you plan to keep your total pack weight (including food, water,
+                        and fuel) under about 25 pounds.
+                    </p>
+                </div>
+                <div class="modal-footer fw-bold">
+                    Posted by: <span class="text-primary">John Wick</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF MODAL 1 -->
+    <!-- MODAL 2 FOR CARD 3 -->
+    <div class="modal fade" id="post3" tabindex="-1" aria-labelledby="post3Label" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <img src="images/card-images/img3-card.jpg" class="card-img-top" alt="image" />
+                <div class="modal-header">
+                    <h5 class="modal-title text-capitalize fw-bold" id="post3Label">how to make hiking fun when hiking sucks
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="">
+                        Bad weather, horrendous blisters, endless hills—it's all fun if you look at it the right way.
+                    </h5>
+                    <h4 class="fw-bold pt-2 text-primary">Learn to identify type two fun</h4>
+                    <hr>
+                    <p>
+                        <span class="fw-bold fs-5">Fix the problem.</span></br>
+                        Now that you've identified that your fun is no longer Type One, ask yourself if the situation is fixable. Can you spend five minutes warming your cold hands in your armpits? Get out of your tent and move it to a flatter spot? Switch your wet socks for
+                        dry ones (or, better yet, dry ones wrapped in plastic bags to keep out the puddles)? Suffering is great and all, but don't do it if you don't have to.
+                    </p>
+                    <p>
+                        <span class="fw-bold fs-5">Lie to yourself.</span></br>
+                        It's wet and freezing and you're exhausted, right? Wrong. Complaining only makes things worse. If there's nothing you can do to fix your situation, turn to your partner and say, “Wow, I feel so warm right now. Warm and energetic! I'm thinking we do 10
+                        more miles today, what do you think?” Or, patently deny that the rain exists: “Rain? There's no rain. Rain is a state of mind.” Best case scenario: You'll actually convince yourself. Second-best: You'll both crack up laughing and
+                        the mood will lift.
+                    </p>
+                    <p>
+                        <span class="fw-bold fs-5">Sing about it.</span></br>
+                        If things are just too miserable for sarcasm or self-deception, you're allowed to complain—but only in song format. It sounds silly, but it's actually pretty Zen: Singing about the rain or mud or how hungry you are is a way of acknowledging and naming
+                        your suffering without getting sucked into the negative brain spiral that will leave you screaming into the void and telling yourself you'll never hike again. Try it.
+                    </p>
+                    <span class="fw-bold fs-5">Take a snack break.</span>
+                    <img src="./images/card-images/modal-images/modal-img-snack-break.jpg" class="w-100 pt-2" alt="snack-break">
+                </div>
+                <div class="modal-footer fw-bold">
+                    Posted by: <span class="text-primary">Sarah Stewart</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF MODAL 2 -->
+    <!-- MODAL 3 FOR CARD 5 -->
+    <div class="modal fade" id="post5" tabindex="-1" aria-labelledby="post5Label" aria-hidden="false">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <img src="images/card-images/img5-card.jpg" class="card-img-top" alt="image" />
+                <div class="modal-header">
+                    <h5 class="modal-title text-capitalize fw-bold" id="post5Label">how to face your fear of backpacking alone
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>
+                        A solo hiking or backpacking trip can either be a freeing or terrifying experience. Learn how to prepare and tame your imagination in the backcountry.
+                    </h5>
+                    <h4 class="fw-bold pt-2 text-primary">Practical strategies to prepare as best you can, calm your mind, and assess danger.</h4>
+                    <hr>
+                    <p>Confession: I've never been solo backpacking. I've hiked and trail run by myself plenty of times, but the thought of sleeping completely alone in the woods makes my scalp prickle. Part of me tells myself that I haven't made the leap
+                        to solo camping because I have more fun with company. The other part of me knows it's because I fear the vulnerability that darkness brings.</p>
+                    <p>
+                        <span class="fw-bold fs-5">Prepare logistically</span></br>
+                        If you've never been hiking or backpacking before, consider honing your mountain sense first before going out on your own. A thorough understanding of gear, terrain, altitude, conditions, and wildlife is the first step in feeling confident and self-sufficient
+                        on the trail.
+                        <br> Know how to filter water, set up your tent, be bear aware, read a map and trail signs, tend to your stove, treat a blister, assess the weather, and pace yourself. You won't be able to rely on anybody but yourself once you're
+                        out there, which can be an incredibly empowering experience if you're well equipped.
+                    </p>
+                    <p>
+                        <span class="fw-bold fs-5">Mind over matter</span></br>
+                        When I'm alone and miles from my car, this is what goes through my mind: What if I get hurt? What if I see a bear or a moose or a mountain lion? What if the weather drastically shifts? What if that twig snapping outside my tent is something threatening?
+                        While a little fear is healthy, this kind of hypervigilance can suck the joy right out of your trip. Beyond planning the logistics, you should also train your mind.
+                    </p>
+                    <p>
+                        <span class="fw-bold fs-5">Assess the situation</span></br>
+                        Sometimes your fear is trying to tell you something. It could be related to weather, wildlife, other hikers on the trail, or something else. Follow your gut. If you get a funny feeling, there's no shame in turning around and coming back another time.
+                        You're trying something new, so give yourself grace and patience.
+                    </p>
+                </div>
+                <div class="modal-footer fw-bold">
+                    Posted by: <span class="text-primary">Adam Roy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF MODAL 3 -->
+
+    <!-- SEARCH BTN -->
+    <div class="search-results">
+        <i class="fa-regular fa-rectangle-xmark" id="closeSearch"></i>
+        <input type="search" placeholder="search" id="searchBar" onsearch="getResults()">
+    </div>
+    </div>
+
+    <!-- END OF SEARCH -->
+    <!-- JS-BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+@mixin bgImg {
+    background-image: $bgImg1;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin flex($flexDir: column, $justifyCont: center) {
+    display: flex;
+    flex-direction: $flexDir;
+    justify-content: $justifyCont;
+}
